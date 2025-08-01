@@ -70,11 +70,11 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className="container mx-auto px-4 py-8 font-Noto flex justify-center gap-10">
-      <div className="w-1/2 max-w-md">
+    <div className="mx-auto px-4 py-8 font-Noto flex flex-col lg:flex-row justify-center gap-10">
+      <div className="w-full mx-auto lg:w-1/2 max-w-md">
         <Edit addTodos={addTodos} formData={formData} updateData={updateData} />
       </div>
-      <div className="w-1/2 max-w-md">
+      <div className="w-full mx-auto lg:w-1/2 max-w-md">
         <List todos={todos} deleteTodos={deleteTodos} />
       </div>
     </div>
