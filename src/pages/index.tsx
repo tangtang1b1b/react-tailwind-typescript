@@ -70,7 +70,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className="mx-auto px-4 py-8 font-Noto flex flex-col lg:flex-row justify-center gap-10">
+    <div className="mx-auto max-w-screen-lg px-4 py-8 font-Noto flex flex-col md:flex-row justify-center gap-10">
       <div className="w-full mx-auto lg:w-1/2 max-w-md">
         <Edit addTodos={addTodos} formData={formData} updateData={updateData} />
       </div>
