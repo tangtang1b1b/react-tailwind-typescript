@@ -6,7 +6,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">關於我們</h3>
             <p className="text-gray-300">
-              這是一個使用 React + TypeScript + Tailwind CSS 建立的現代化網站。
+              這是一個使用 React + TypeScript + Tailwind CSS 建立的網站。
             </p>
           </div>
           <div>
@@ -22,7 +22,7 @@ const Footer = () => {
             <div className="text-gray-300 space-y-2">
               <p>Email: info@example.com</p>
               <p>電話: (02) 1234-5678</p>
-              <p>地址: 台北市信義區信義路五段7號</p>
+              <p>地址: 台北市木柵區動物園路</p>
             </div>
           </div>
         </div>

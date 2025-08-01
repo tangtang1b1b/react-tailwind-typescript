@@ -42,7 +42,7 @@ const ContactPage = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-2 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
               
@@ -57,7 +57,7 @@ const ContactPage = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-2 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
               
@@ -72,7 +72,7 @@ const ContactPage = () => {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-2 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
               
@@ -123,7 +123,7 @@ const ContactPage = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold">地址</h3>
-                  <p className="text-gray-600">台北市信義區信義路五段7號</p>
+                  <p className="text-gray-600">台北市木柵區動物園路</p>
                 </div>
               </div>
             </div>
