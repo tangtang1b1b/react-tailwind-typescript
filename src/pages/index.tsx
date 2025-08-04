@@ -1,84 +1,22 @@
-import { useEffect, useState } from 'react';
-import List from '../components/Home/List';
-import Edit from '../components/Home/Edit';
-
-interface Note {
-  id: number;
-  text: string;
-  date: string;
-  time: string;
-}
+import { Link } from 'react-router-dom'
+import { useAppSelector } from '@/hooks/redux'
 
 const HomePage = () => {
-  const [formData, setFormData] = useState<Note>({
-    id: Date.now(),
-    text: '',
-    date: '',
-    time: '',
-  });
-  const [todos, setTodos] = useState<Note[]>([]);
-
-  const getData = async () => {
-    try {
-      if (localStorage.getItem('todos')) {
-        const localTodos = localStorage.getItem('todos');
-        if (localTodos) {
-          setTodos(JSON.parse(localTodos));
-        }
-      }
-    } catch (error) {
-      console.error('Error fetching data:', error);
-    }
-  };
-
-  const updateData = (key: keyof Note, value: string) => {
-    setFormData((prev) => ({
-      ...prev,
-      [key]: value,
-    }));
-  };
-
-  const addTodos = async () => {
-    if (!formData.text.trim()) return;
-
-    const newTodo: Note = {
-      id: Date.now(),
-      text: formData.text,
-      date: formData.date,
-      time: formData.time,
-    };
-
-    localStorage.setItem('todos', JSON.stringify([...todos, newTodo]));
-
-    setTodos([...todos, newTodo]);
-    setFormData({
-      id: Date.now(),
-      text: '',
-      date: '',
-      time: '',
-    });
-  };
-
-  const deleteTodos = async (id: number) => {
-    const filteredTodos = todos.filter((todo) => todo.id !== id);
-    localStorage.setItem('todos', JSON.stringify(filteredTodos));
-    setTodos(filteredTodos);
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
+  const currentNum = useAppSelector((state) => state.counter.currentNum)
 
   return (
-    <div className="mx-auto max-w-screen-lg px-4 py-8 font-Noto flex flex-col md:flex-row justify-center gap-10">
-      <div className="w-full mx-auto lg:w-1/2 max-w-md">
-        <Edit addTodos={addTodos} formData={formData} updateData={updateData} />
-      </div>
-      <div className="w-full mx-auto lg:w-1/2 max-w-md">
-        <List todos={todos} deleteTodos={deleteTodos} />
+    <div className="mx-auto flex h-full w-full flex-col items-center justify-center gap-10 bg-gray-50 px-4 py-8 font-Noto md:flex-row">
+      <div className="flex flex-col items-center gap-6">
+        <div className="rounded-lg bg-white p-6 text-center shadow-lg">
+          <h2 className="mb-2 text-xl font-semibold text-gray-800">目前計數器數值</h2>
+          <p className="text-4xl font-bold text-blue-600">{currentNum}</p>
+        </div>
+        <Link to="/demo" className="text-3xl font-bold text-black duration-300 hover:text-gray-700">
+          模板總攬
+        </Link>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default HomePage;
+export default HomePage
