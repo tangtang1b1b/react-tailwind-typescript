@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .dev-blue {
   outline: solid 1px blue;
 }

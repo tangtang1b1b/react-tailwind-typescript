@@ -1,10 +1,10 @@
-import Reduxtest from '../../components/Demo/Reduxtest';
+import Reduxtest from '../../components/Demo/Reduxtest'
 const reduxtest = () => {
-  return  (
+  return (
     <div>
       <Reduxtest />
     </div>
-  );
-};
+  )
+}
 
-export default reduxtest;
+export default reduxtest

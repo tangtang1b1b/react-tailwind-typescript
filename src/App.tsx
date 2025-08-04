@@ -1,11 +1,11 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Layout from './components/Layout';
-import HomePage from './pages';
-import AboutPage from './pages/about';
-import ContactPage from './pages/contact';
-import Demo from './pages/demo';
-import Todolist from './components/Demo/Todolist';
-import Reduxtest from './components/Demo/Reduxtest';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Layout from './components/Layout'
+import HomePage from './pages'
+import AboutPage from './pages/about'
+import ContactPage from './pages/contact'
+import Demo from './pages/demo'
+import Todolist from './components/Demo/Todolist'
+import Reduxtest from './components/Demo/Reduxtest'
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
         </Routes>
       </Layout>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App

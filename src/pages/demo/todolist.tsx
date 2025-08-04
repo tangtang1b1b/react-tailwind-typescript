@@ -1,10 +1,10 @@
-import Todolist from '../../components/Demo/Todolist';
+import Todolist from '../../components/Demo/Todolist'
 const todolist = () => {
-  return  (
+  return (
     <div>
       <Todolist />
     </div>
-  );
-};
+  )
+}
 
-export default todolist;
+export default todolist
