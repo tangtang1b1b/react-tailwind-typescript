@@ -3,7 +3,7 @@ import Layout from '@/components/Layout'
 import HomePage from '@/pages'
 import AboutPage from '@/pages/About'
 import ContactPage from '@/pages/Contact'
-import Demo from '@/pages/Demo'
+import Demo from '@/pages/demo'
 import Todolist from '@/components/Demo/Todolist'
 import Reduxtest from '@/components/Demo/Reduxtest'
 
