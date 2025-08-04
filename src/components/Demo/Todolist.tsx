@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import List from '../Home/List';
-import Edit from '../Home/Edit';
+import List from '@/components/Home/List';
+import Edit from '@/components/Home/Edit';
 
 interface Note {
   id: number;
