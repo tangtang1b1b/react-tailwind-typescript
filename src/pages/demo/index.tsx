@@ -12,7 +12,7 @@ const Demo = () => {
   ]
 
   return (
-    <div className="mx-auto grid max-w-screen-lg grid-cols-3 gap-10 px-4 py-8 font-Noto">
+    <div className="mx-auto grid max-w-screen-lg gap-10 px-4 py-8 font-Noto sm:grid-cols-2 md:grid-cols-3">
       {list.map((item) => (
         <Link
           key={item.name}
