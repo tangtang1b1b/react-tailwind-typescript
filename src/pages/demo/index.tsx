@@ -17,6 +17,7 @@ const Demo = () => {
   const list: ListProps[] = [
     { id: '1', name: 'Todolist', path: '/demo/todolist' },
     { id: '2', name: 'Reduxtest', path: '/demo/reduxtest' },
+    { id: '3', name: 'Buylist', path: '/demo/buylist' },
   ]
 
   const category: CategoryProps[] = [
@@ -64,7 +65,7 @@ const Demo = () => {
       <AnimatePresence mode="wait">
         <motion.div
           key={activeCategory}
-          className="grid gap-10 px-4 py-8 font-Noto sm:grid-cols-2 md:grid-cols-3"
+          className="grid gap-5 px-4 py-8 font-Noto sm:grid-cols-2 md:grid-cols-3"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
