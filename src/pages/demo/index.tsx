@@ -17,7 +17,7 @@ const Demo = () => {
   const list: ListProps[] = [
     { id: '1', name: 'Todolist', path: '/demo/todolist' },
     { id: '2', name: 'Reduxtest', path: '/demo/reduxtest' },
-    { id: '3', name: 'Buylist', path: '/demo/buylist' },
+    { id: '1', name: 'Buylist', path: '/demo/buylist' },
   ]
 
   const category: CategoryProps[] = [
