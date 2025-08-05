@@ -70,7 +70,7 @@ const Todolist = () => {
   }, [])
 
   return (
-    <div className="mx-auto flex max-w-screen-lg flex-col justify-center gap-10 px-4 py-8 font-Noto md:flex-row">
+    <div className="mx-auto bg-black h-full flex max-w-screen-lg flex-col justify-center gap-10 px-4 py-8 font-Noto md:flex-row">
       <div className="mx-auto w-full max-w-md lg:w-1/2">
         <Edit addTodos={addTodos} formData={formData} updateData={updateData} />
       </div>

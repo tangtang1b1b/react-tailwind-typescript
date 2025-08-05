@@ -72,7 +72,7 @@ export default {
     extend: {
       colors: {
         transparent: 'transparent',
-        black: '#0D0C0C',
+        black: '#0f1115',
         white: '#fff',
         pr: {
           lighter: '#CEDBD2',
@@ -160,16 +160,7 @@ export default {
         detail: '0 0px 4px rgba(0, 0, 0, 0.1)',
       },
       boxShadow: {
-        break: '-0.32px 0px 1.28px 0px rgba(91, 76, 38, 0.1) inset, 0px 0.32px 1.28px 0px rgba(91, 76, 38, 0.1) inset',
-        card: '2px 2px 8px 0px rgba(168, 168, 168, 0.25), -2px -2px 8px 0px rgba(168, 168, 168, 0.25)',
-        patient: '2px 2px 8px 0px rgba(168, 168, 168, 0.1), -2px -2px 8px 0px rgba(168, 168, 168, 0.1)',
-        nav: '0px 4px 10px rgba(141, 141, 141, 0.15)',
-        popup: '0px 4px 12px rgba(0, 0, 0, 0.1)',
-        inset: '0px -7px 10px 0px rgba(255, 255, 255, 1) inset',
-        flow: '0px 0px 15px 0px rgba(0, 0, 0, 0.12) inset',
-        doctor: '-1px 0px 4px 0px rgba(7, 24, 13, 0.25) inset, 0px 1px 4px 0px rgba(7, 24, 13, 0.25) inset',
-        QA: '0px 1px 10px 0px rgba(0, 0, 0, 0.1), -46px 52px 28px 0px rgba(0, 0, 0, 0.01),-72px 81px 30px 0px rgba(0, 0, 0, 0)',
-        flowBody: '-1px 0px 4px 0px rgba(91, 76, 38, 0.1) inset, 0px 1px 4px 0px rgba(91, 76, 38, 0.1) inset',
+        card: '0px 0px 10px 2px rgba(180, 180, 180, 0.75)',
       },
       borderRadius: {
         none: '0',

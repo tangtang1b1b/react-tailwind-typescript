@@ -15,18 +15,18 @@ const Reduxtest = () => {
   }
 
   return (
-    <div className="flex size-full items-center justify-center">
+    <div className="flex size-full items-center justify-center bg-black">
       <div className="flex flex-col items-center justify-center gap-5 rounded-lg p-5 shadow-card">
-        <p className="text-2xl">{currentNum}</p>
-        <div className="flex gap-3 text-2xl">
+        <p className="text-2xl text-white">{currentNum}</p>
+        <div className="flex gap-3 text-xl">
           <div
-            className="cursor-pointer select-none rounded-lg bg-blue-500 px-2 text-white duration-300 hover:brightness-110"
+            className="cursor-pointer select-none rounded-md bg-white px-5 text-black duration-300 hover:brightness-110"
             onClick={() => calNumber(1)}
           >
             增加
           </div>
           <div
-            className="cursor-pointer select-none rounded-lg bg-red-500 px-2 text-white duration-300 hover:brightness-95"
+            className="cursor-pointer select-none rounded-md bg-gray-700 px-5 text-white duration-300 hover:brightness-95"
             onClick={() => calNumber(-1)}
           >
             減少
