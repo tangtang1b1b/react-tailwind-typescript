@@ -4,7 +4,7 @@ const AboutPage = () => {
       <div className="mx-auto max-w-4xl">
         <h1 className="mb-8 text-center text-4xl font-bold text-gray-800">關於我們</h1>
 
-        <div className="mb-8 rounded-lg bg-white p-8 shadow-lg">
+        <div className="mb-8 rounded-lg bg-white p-8 shadow-card">
           <h2 className="mb-4 text-2xl font-semibold">我們的願景</h2>
           <p className="mb-4 text-gray-600">
             我們致力於打造最優質的網頁應用程式，使用最新的技術棧來提供卓越的用戶體驗。
@@ -16,7 +16,7 @@ const AboutPage = () => {
         </div>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          <div className="rounded-lg bg-white p-6 shadow-lg">
+          <div className="rounded-lg bg-white p-6 shadow-card">
             <h3 className="mb-4 text-xl font-semibold text-blue-600">技術專長</h3>
             <ul className="space-y-2 text-gray-600">
               <li>• React & TypeScript 開發</li>
@@ -27,7 +27,7 @@ const AboutPage = () => {
             </ul>
           </div>
 
-          <div className="rounded-lg bg-white p-6 shadow-lg">
+          <div className="rounded-lg bg-white p-6 shadow-card">
             <h3 className="mb-4 text-xl font-semibold text-green-600">服務項目</h3>
             <ul className="space-y-2 text-gray-600">
               <li>• 網站開發與設計</li>

@@ -28,7 +28,7 @@ const ContactPage = () => {
 
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           {/* 聯絡表單 */}
-          <div className="rounded-lg bg-white p-8 shadow-lg">
+          <div className="rounded-lg bg-white p-8 shadow-card">
             <h2 className="mb-6 text-2xl font-semibold">發送訊息</h2>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
@@ -86,7 +86,7 @@ const ContactPage = () => {
           </div>
 
           {/* 聯絡資訊 */}
-          <div className="rounded-lg bg-white p-8 shadow-lg">
+          <div className="rounded-lg bg-white p-8 shadow-card">
             <h2 className="mb-6 text-2xl font-semibold">聯絡資訊</h2>
 
             <div className="space-y-6">
