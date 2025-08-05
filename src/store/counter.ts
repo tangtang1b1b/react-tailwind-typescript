@@ -1,11 +1,17 @@
 import { createSlice } from '@reduxjs/toolkit'
 
+type BuyListItem = {
+  name: string
+  price: number
+}
 interface CounterState {
   currentNum: number
+  buyList: BuyListItem[]
 }
 
 const initialState: CounterState = {
   currentNum: 0,
+  buyList: [],
 }
 
 const counterSlice = createSlice({
